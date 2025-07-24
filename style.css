@@ -238,6 +238,30 @@ main {
   margin-top: -130px;
 }
 
+/* Latest Deals Section */
+
+.latest-deals{
+  margin-bottom: 120px;
+}
+
+.latest-heading{
+  color:#000;
+  font-weight: bold;
+  font-size: 3.125rem;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.latest-heading span{
+  color:#e95a08;
+}
+
+.latest-description{
+  width: 100%;
+  max-width: 888px;
+  text-align: center;
+  font-size: 1.375rem;
+}
 /* Media Queries */
 
 @media screen and (max-width:576px) {
@@ -331,5 +355,16 @@ main {
 
   .pl-right{
     max-width: 361px;
+  }
+
+  /* Latest Deals Section */
+
+  .latest-deals{
+    margin-bottom: 51.5px;
+  }
+
+  .latest-description{
+    font-size: 0.875rem;
+    max-width: 336px;
   }
 }
