@@ -324,12 +324,12 @@ main {
 }
 
 .one{
-  background-image: url("../assets/deal-bloom.png");
+  background-image: url("assets/deal-bloom.png");
   background-repeat: no-repeat;
 }
 
 .two{
-  background-image: url("../assets/deal-ana.png");
+  background-image: url("assets/deal-ana.png");
   background-repeat: no-repeat;
   background-size:cover;
 }
@@ -338,7 +338,7 @@ main {
   width: 100%;
   max-width: 753px;
   height: 423.12px;
-  background-image: url("../assets/deal-zabo.png");
+  background-image: url("assets/deal-zabo.png");
   border-radius: 22px;
   display: flex;
   flex-direction: column;
