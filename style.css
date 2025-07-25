@@ -239,6 +239,17 @@ main {
   max-width: 286px;
   margin-left: -190px;
   margin-top: -130px;
+  animation: infinite linear 10s spin;
+}
+
+@keyframes spin{
+  from{
+    transform: rotate(0deg);
+  }
+
+  to{
+    transform: rotate(360deg);
+  }
 }
 
 /* Latest Deals Section */
@@ -266,8 +277,6 @@ main {
   font-size: 1.375rem;
 }
 
-/* Discount Section */
-
 .discount{
   display: grid;
   grid-template-columns:1fr 2fr;
@@ -283,6 +292,7 @@ main {
 }
 
 .left-container-2{
+  height: 423px;
   display: flex;
   flex-direction: column;
   gap:25px;
@@ -327,12 +337,12 @@ main {
 }
 
 .one{
-  background-image: url("assets/deal-bloom.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4)),url("assets/deal-bloom.png");
   background-repeat: no-repeat;
 }
 
 .two{
-  background-image: url("assets/deal-ana.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4)),url("assets/deal-ana.png");
   background-repeat: no-repeat;
   background-size:cover;
 }
@@ -340,8 +350,8 @@ main {
 .second{
   width: 100%;
   max-width: 753px;
-  height: 423.12px;
-  background-image: url("assets/deal-zabo.png");
+  height: 423px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4)),url("assets/deal-zabo.png");
   border-radius: 22px;
   display: flex;
   flex-direction: column;
@@ -354,7 +364,7 @@ main {
 .join{
   width: 100%;
   height: 533px;
-  background-image: url("assets/news-letter-bg.png");
+  background-image: linear-gradient(rgba(7, 51, 79, 0.4)),url("assets/news-letter-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -466,12 +476,6 @@ footer ul{
 
 @media screen and (max-width:576px) {
 
-  /* Header Section */
-
-  header{
-    max-width: 100%;
-  }
-
   /* Navbar */
 
   nav{
@@ -513,6 +517,10 @@ footer ul{
 
   /* Plants Section */
 
+  .plants{
+    margin-bottom: 41.5px;
+  }
+
   .plants-heading{
     font-size: 1.5rem;
   }
@@ -532,6 +540,9 @@ footer ul{
     max-width: 171px;
   }
 
+  .name{
+    margin-bottom: 10px;
+  }
   /* Plants Lover Section */
 
   .trusted{
@@ -568,11 +579,10 @@ footer ul{
     max-width: 336px;
   }
 
-  /* Discount Section */
-
   .discount{
     grid-template-columns: 1fr;
     margin-bottom: 40px;
+    gap:20px;
   }
 
   .first,.second{
@@ -582,6 +592,7 @@ footer ul{
 
   .left-container-2{
     align-items: center;
+    gap:20px;
   }
 
   .second{
@@ -602,6 +613,10 @@ footer ul{
 
   .first p{
     margin-bottom: 19px;
+  }
+
+  .two{
+    border-radius: 0px;
   }
 
   /* Join Section */
@@ -644,6 +659,10 @@ footer ul{
     align-items: flex-start;
     max-width: 393px;
     padding-left:20px;
+  }
+
+  .footer-1 img{
+    max-width: 180px;
   }
 
   .footer-1 p,.footer-2 p,.footer-3{
